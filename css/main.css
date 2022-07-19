@@ -1,0 +1,164 @@
+.header-logo{
+  transition: 0.3s ease;
+}
+
+.header-logo:hover{
+  transform: scale(1.2);
+}
+
+.header-item-col-5-link{
+  color: aliceblue;
+  transition: 0.3s ease;
+}
+
+.col-5-right{
+  display: flex;
+  justify-content: end;
+}
+
+.header-item-col-5-link:hover{
+  color: gray;
+}
+
+.w-10{
+  width: 40px;
+}
+
+.version{
+  width: 40px;
+  font-size: 13px;
+  padding: 0px;
+  margin-bottom: 12px;
+}
+
+.right-link-docs{
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 0.3s ease;
+  margin-bottom: px;
+}
+
+.right-link{
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.right-link:hover{
+  color: gray;
+}
+
+.hero{
+  background-color: #5A5FD2;
+  z-index: 4;
+}
+
+.bg-imgs{
+  height: 1000px;
+  background-image: url('../img/brench.jpg');
+  background-repeat: no-repeat;
+  background-size: 370px;
+  background-position: 220px 200px;
+  opacity: 20%;
+  z-index: 1;
+}
+
+.hero-p{
+  padding-top: 100px;
+}
+
+.hero-heading{
+  font-size: 60px;
+}
+
+.hero-button{
+  width: 200px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-button:hover{
+  color: white;
+  font-weight: 500;
+}
+
+.hero-slide-in{
+  display: flex;
+  align-items: center;
+  max-width: 650px;
+}
+
+.hero-slide-inner{
+  opacity: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.angle{
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.angle-text{
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+
+.angle-img{
+  max-width: 380px;
+  padding-top: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.angle-img:hover{
+  transform: scale(1.002);
+  box-shadow: 0px 10px 20px 1px;
+}
+
+.angle-item-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content{
+  display: flex;
+}
+
+.hero-slide{
+  margin-top: 50px;
+  width: 1000px;
+}
+
+.hero-text{
+  width: 1000px;
+}
+
+.phone-text{
+  width: 600px;
+}
+
+@media screen and (max-width: 1100px) {
+  .hero-list{
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .hero-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-text{
+    width: 1000px;
+    text-align: center;
+  }
+}
