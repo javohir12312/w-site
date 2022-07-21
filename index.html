@@ -4,251 +4,433 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> W </title>
-  <!-- CSS only -->
+  <title>Document</title>
   <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
-<link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <div class="header bg-dark">
+   <header class="header bg-dark">
     <div class="container">
-      <div class="row d-flex justify-content-between">
-          <div class="col-5 d-flex align-items-center p-3">
-            <a class="header-logo d-inline-block" href="./index.html">
-              <img class="d-block" src="./img/logo.svg" alt="Logo">
-            </a>
+      <div class="header-content py-2 d-flex justify-content-between">
 
-            <ul class="list-unstyled my-0 mx-5 d-flex">
-              <li class="header-item-col-5">
-                <a class=" text-decoration-none header-item-col-5-link" href="#">
-                  Overview
-                </a>
-              </li>
+        <div class="d-flex justify-content-between">
+          <a class="logo" href="./index.html">
+            <img class="d-block" src="./img/logo.svg" alt="Logo" width="60" height="60">
+          </a>
+          
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="overwiev" href="#">
+              Overwiev
+              </a>
+            </li>
+            <li class="header-item">
+              <form action="https://echo.htmlacademy.ru">
+                <select class="bg-dark border-0 text-white px-3 w-75" name="queastion" id="">
+                  <option value="Pages">Pages</option>
+                  <option value="Landing Pages">Landing Pages</option>
+                  <option value="App pages">App pages</option>
+                  <option value="Inner Pages">Inner Pages</option>
+                </select>
+              </form>
+            </li>
+            <li class="header-item">
+              <form action="https://echo.htmlacademy.ru">
+                <select class="bg-dark border-0 text-white px-3 w-100" name="queastion" id="">
+                  <option value="Components" selected hidden>Components</option>
+                  <option value="Wingman">Wingman</option>
+                  <option value="bootstrap">bootstrap</option>
+                </select>
+              </form>
+            </li>
+          </ul>
+        </div>
 
-              <li class="header-item-col-5 mx-4 ">
-                <form action="https://echo.htmlacademy.ru">
-                  <select class="bg-dark border-0 text-white w-75 text-center" name="Queastion" id="Queastion">
-                    <option value="pages" selected hidden>Pages</option>
-                    <option value="Landing  pages">Landing pages</option>
-                    <option value="App">App pages</option>
-                    <option value="Inner">Inner pages</option>
-                  </select>
-                </form>
-              </li>
+        <div class="select">
+          <div class="d-flex align-items-center">
 
-              <li class="header-item-col-5">
-                <form action="https://echo.htmlacademy.ru">
-                  <select class="bg-dark border-0 text-white w-100" name="Queastion" id="Queastion">
-                    <option value="Pages" selected hidden>bootstrap</option>
-                    <option value="Landing  pages">Wingman</option>
-                  </select>
-                </form>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-5 col-5-right d-flex align-items-center">
             <ul class="list-unstyled m-0 d-flex">
-              <li class="text-white right-link-docs text">
 
+              <li class="text-white right-link-docs text">
+                
                 <a class="right-link-docs text-decoration-none m-0" href="#">
                   Docs
                 </a>
               </li>
-
+  
               <li>
-                <a class="right-link text-decoration-none mx-4" href="#">
+                <a class="right-link-docs text-decoration-none align-content-center mx-4" href="#">
                   Changelog
-
-                  <button type="button" class="version  btn btn-secondary w-10">v1.3.0</button>
+  
+                <button type="button" class="version  btn btn-secondary w-10">v1.3.0</button>
                 </a>
+
               </li>
             </ul>
-
-            <button type="button" class="btn btn-success  w-25">Success</button>
+  
+            <button type="button" class="btn btn-success">Success</button>
           </div>
-      </div>
-    </div>
-  </div>
+        </div>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content ">
-          <div class="hero-text hero-p">
-            <h1 class="text-white hero-heading h1 fw-normal w-75">
-              Build stunning websites and apps
-            </h1>
-  
-            <p class="w-75 text-white my-5">
-              Meet Wingman, a robust suite of styled pages and components, powered by Bootstrap 4. The ideal starting point for product landing pages, stylish web-apps and complete company websites.
-            </p>
-  
-            <div>
-              <button type="button" class="btn btn-success  w-25">Success</button>
-              
-              <a class="hero-button mx-5" href="#">
-                Start exploring &gt;
-              </a>
-            </div>
-          </div>
+        <div class="hamburger navbar navbar-dark bg-dark">
+          <div class="container-fluid">
 
-          <div class="hero-slide">
-            <div id="carouselExampleInterval" class="slide-heroo carousel slide hero-slide-" data-bs-ride="carousel">
-              <div class="carousel-inner">
-  
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="./img/build.jpg" width="400" class="d-block hero-slide-inner" alt="build">
-                </div>
-  
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="./img/brench.jpg" class="d-block w-75 hero-slide-inner" alt="brench">
-                </div>
-  
-                <div class="carousel-item">
-                  <img src="./img/help.jpg" class="d-block w-75 hero-slide-inner" alt="help">
-                </div>
-  
-                <div class="carousel-item">
-                  <img src="./img/ready.jpg" class="d-block w-75 hero-slide-inner" alt="ready">
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+
+              <div class="offcanvas-header">
+
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  Wingman
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+
+              <div class="offcanvas-body">
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Overwiev</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Components
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    
-    <section class="angle">
+    </div>
+   </header>
+
+   <main>
+    <section class="hero">
       <div class="container">
-
-        <p class="text-center m-auto angle-text">
-          MEET WINGMAN
-        </p>
-
-        <h2 class="text-center fw-normal m-0 p-3">
-          Attractive from every angle
-        </h2>
-
-        <p class="m-auto text-center w-50">
-          Wingman delivers a seamless user experience, offering visual consistency for your brand, from landing to logged-in
-        </p>
-        
-        <ul class="hero-list list-unstyled d-flex justify-content-center angle-item-heading m-0 w-100">
-          <li class="angle-item m-auto">
-            <img class="angle-img" src="./img/kin.jpg" alt="kin">
+        <div class="hero-content">
+          <div class="hero-all-text col-6 py-4">
             
-            <h3 class="angle-item-heading py-3">
-              Landing Pages
-            </h3>
+            <h2 class="display-4 py-2">
+              Build stunning websites and apps
+            </h2>
 
-            <p>
-              Impress potential customers and introduce your product using Wingman’s diverse, purpose-built landing pages
+            <p class="lead py-2 w-75">
+              Meet Wingman, a robust suite of styled pages and components, powered by Bootstrap 4. The ideal starting point for product landing pages, stylish web-apps and complete company websites.
             </p>
 
-            <a class="text-decoration-none" href="#">
-              Explore Landing Pages ›
-            </a>
-          </li>
+            <div class="hero-button py-2">
+              
+              <button type="button" class="btn btn-success">Purchashe Now</button>
 
-          <li class="angle-item m-auto">
-            <img class="angle-img" src="./img/building.jpg" alt="building">
+              <a class="text-decoration-none text-white px-4" href="#">
+                Star Exploring >
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-all-text-responsive">
             
-            <h3 class="angle-item-heading py-3">
-              App Pages
-            </h3>
+            <h2 class="m-auto text-center p-4">
+              Build stunning websites and apps
+            </h2>
 
-            <p>
-              A robust suite of styled app pages and flexible Bootstrap-based components makes Wingman ideal for building Apps
+            <p class="lead py-2 w-75 text-center m-auto">
+              Meet Wingman, a robust suite of styled pages and components, powered by Bootstrap 4. The ideal starting point for product landing pages, stylish web-apps and complete company websites.
             </p>
 
-            <a class="text-decoration-none" href="#">
-              Explore Landing Pages ›
-            </a>
-          </li>
+            <div class="hero-button py-4 m-auto text-center">
+              
+              <button type="button" class="btn btn-success">Purchashe Now</button>
 
-          <li class="angle-item m-auto">
-            <img class="angle-img" src="./img/app-profile-social-hero.jpg" alt="profil">
-            
-            <h3 class="angle-item-heading py-3">
-              Inner Pages
-            </h3>
+              <a class="text-decoration-none text-white px-4" href="#">
+                Star Exploring >
+              </a>
+            </div>
+          </div>
 
-            <p>
-              Landing pages are just the beginning. Wingman includes a collection of detailed inner pages to complete your online presence.
-            </p>
 
-            <a class="text-decoration-none" href="#">
-              Explore Landing Pages ›
-            </a>
-          </li>
-        </ul>
+
+          <div class="hero-img m-auto py-4">
+            <img class="img-fluid" src="./img/build.jpg" alt="Build" width="450">
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="familiar">
+    <section class="angle">
       <div class="container">
-        <div class="familiar-content d-flex justify-content-between py-5">
-          <div class="familiar-all-text w-50 flex-wrap">
-            <p>
+        <div class="angle-content">
+
+          <p class="text-center">MEET WINGMAN</p>
+
+          <h2 class="text-center display-4">
+            Attractive from every angle
+          </h2>
+
+          <p class="text-center">
+            Wingman delivers a seamless user experience, offering visual consistency for your brand, from landing to logged-in
+          </p>
+          
+          <ul class="angle-list">
+
+            <li class="angle-item">
+
+              <img class="img-fluid py-4" src="./img/ready.jpg" alt="ready" width="400">
+
+              <h5>
+                Landing Pages
+              </h5>
+
+              <p>
+                Impress potential customers and introduce your product using Wingman’s diverse, purpose-built landing pages
+              </p>
+
+              <a class="text-decoration-none" href="#">
+                Exlpore Landing Pages >
+              </a>
+
+            </li>
+
+            <li class="angle-item">
+
+              <img class="img-fluid py-4" src="./img/app-profile-social-hero.jpg" alt="app" width="400">
+
+              <h5>
+                App Pages
+              </h5>
+
+              <p>
+                A robust suite of styled app pages and flexible Bootstrap-based components makes Wingman ideal for building Apps              
+              </p>
+
+              <a class="text-decoration-none" href="#">
+                Exlpore Landing Pages >
+              </a>
+
+            </li>
+
+            <li class="angle-item ">
+
+              <img class="img-fluid py-4" src="./img/build.jpg" alt="build" width="400">
+
+              <h5>
+                Inner Pages
+              </h5>
+
+              <p>
+                Landing pages are just the beginning. Wingman includes a collection of detailed inner pages to complete your online presence.              
+              </p>
+
+              <a class="text-decoration-none" href="#">
+                Exlpore Landing Pages >
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section  class="familiar">
+      <div class="container">
+        <div class="familiar-content">
+          <div class="familiar-all-text m-auto">
+
+            <p class="title-decorative py-3">
               DESIGNED FOR DEVELOPERS
             </p>
 
-            <h2>
+            <h3 class="h1 py-3">
               Familiar, modern tooling
-            </h2>
+            </h3>
 
-            <p>
+            <p class="lead py-3">
               Wingman employs industry-standard development tools with an intuitive workflow designed to get you up and runnning faster.
             </p>
 
-            <a href="#">
-              Explore Documentation
+            <a class="text-decoration-none" href="#">
+              Explore Documentation ›
             </a>
           </div>
 
-          <img src="./img/es-img.svg" alt="programmingg" width="600" height="400">
+          <img class="m-auto img-fluid" src="./img/es-img.svg" alt="" width="400" height="500">
         </div>
       </div>
     </section>
 
     <section class="phone">
-      <div class="container">
-        <div class="phone-content d-flex justify-content-between">
-          <img class="py-5" src="./img/phone-img.png" alt="phone" width="500">
+        <div class="container">
+          <div class="phone-content">
 
-          <div class="all-text btn-group-vertical phone-text">
-            <p class="w-50">
-              DEVELOPED FOR DESIGNERS
-            </p>
+            <img class="m-auto img-fluid" src="./img/phone-img.png" alt="Phone" width="600">
 
-            <h2>
-              Responsive, naturally.
-            </h2>
+            <div class=" familiar-all-text m-auto">
 
-            <p class="w-50">
-              Built on the mobile-first Bootstrap 4 architecture. Wingman scales elegantly to suit all screen sizes.
-            </p>
-
-            <a href="#">
-              Explore Documentation
-            </a>
+              <p class="title-decorative py-3">
+                DESIGNED FOR DEVELOPERS
+              </p>
+  
+              <h3 class="h1 py-3">
+                Familiar, modern tooling
+              </h3>
+  
+              <p class="lead py-3">
+                Wingman employs industry-standard development tools with an intuitive workflow designed to get you up and runnning faster.
+              </p>
+  
+              <a class="text-decoration-none" href="#">
+                Explore Documentation ›
+              </a>
+            </div>
           </div>
+        </div>
+    </section>
+
+    <section class="samuel">
+      <div class="container">
+        <div class="samuel-comtent">
+
+          <img  class="samuel-img mx-auto" src="./img/other-profil.jpg" alt="profil">
+
+          <p class="h2 mx-auto w-100 px-5">
+            “With Wingman, we were able to turn out a stunning landing page and compelling MVP for our SaaS App in no time.”
+
+            <br>
+            <br>
+            <span class="fs-6">
+              Samuel Canning, Movend
+            </span>
+          </p>
         </div>
       </div>
     </section>
-  </main>
 
+    <section class="core">
+      <div class="container">
+
+        <h2 class="text-center display-4 py-4">
+          Bootstrap core + much more
+        </h2>
+
+        <p class="text-center lead">
+          Wingman features full coverage of Bootstrap's core components plus a suite of additional time-saving features
+        </p>
+        <div class="core-content">
+          
+          <img class="img-fluid py-5" src="./img/core.png" alt="core" width="700">
+
+          <ul class="core-list my-auto">
+
+            <li class="cor-item">
+
+              <a class="text-decoration-none text-black" href="#">
+
+                <div>
+
+                  <h5>
+                    Modular & Multi-Purpose
+                  </h5>
+
+                  <p>
+                    Create pages rich in functionality with Wingman's array of modular widgets - carefully designed for a wide range of purposes.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cor-item">
+
+              <a class="text-decoration-none text-black" href="#">
+
+                <div>
+
+                  <h5>
+                    Modular & Multi-Purpose
+                  </h5>
+
+                  <p>
+                    Create pages rich in functionality with Wingman's array of modular widgets - carefully designed for a wide range of purposes.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cor-item">
+
+              <a class="text-decoration-none text-black" href="#">
+
+                <div>
+
+                  <h5>
+                    Modular & Multi-Purpose
+                  </h5>
+
+                  <p>
+                    Create pages rich in functionality with Wingman's array of modular widgets - carefully designed for a wide range of purposes.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="gradent">
+      <div class="gradient">
+
+      </div>
+      <div class="container">
+
+        <div class="gradient-content">
+
+          <h2>
+            Start building feature-rich websites
+          </h2>
+
+          <button class="gradient-button">
+            Purchashe Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+   </main>
 
   <!-- JavaScript Bundle with Popper -->
-<script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.js" crossorigin="anonymous"></script>
+  <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.js" crossorigin="anonymous"></script>
 </body>
 </html>
