@@ -108,16 +108,16 @@
 .samuel{
   display: flex;
   background-color: #5A5FD2;
-  padding: 100px;
+  padding-top: 100px;
   margin-top: -18px;
 }
 
 .samuel-img{
-  max-width: 200px;
+  width: 200px;
   border-radius: 50%;
 }
 
-.samuel-comtent{
+.samuel-content{
   display: flex;
   align-items: center;
   color: white;
@@ -129,7 +129,7 @@
 
 .core-content{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .core-list{
@@ -153,9 +153,29 @@
 
 
 .gradient{
-  height: 100px;
-  background-image: linear-gradient(to top right, #6E42C1 0% 59%, #f3eeee 60% 100%);
+  height: 200px;
+  background-image: linear-gradient(to top right, #6E42C1 0% 50%, #f3eeee 51% 100%);
 }
+
+.gradient-button{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  color: white;
+  background-color: #8996E6;
+  border: solid 2px #8996E6;
+  border-radius: 5px;
+}
+
+.footer{
+  background-color: #343A40;
+}
+
+.footer-content{
+  display: flex;
+}
+
 @media screen and (max-width: 1000px) {
   .hamburger{
     display: flex;
@@ -192,7 +212,7 @@
   .samuel{
     display: flex;
     background-color: #5A5FD2;
-    padding: 100px;
+    padding-top: 100px;
     margin-top: 0px;
   }
 
@@ -207,9 +227,18 @@
   
 }
 
-@media screen and (max-width: 1000px){
-    .samuel-comtent{
-      display: block;
-      text-align: center;
-    }
+@media screen and (max-width: 800px){
+  .samuel-img{
+    max-width: 100px;
+    border-radius: 50%;
+  }
+
+  .gradient{
+    height: 100px;
+    background-image: linear-gradient(to top right, #6E42C1 0% 100%, #f3eeee 51% 90%);
+  }
+
+  .footer-content{
+    display: block;
+  }
 }
